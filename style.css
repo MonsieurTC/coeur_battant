@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.coeur {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: relative;
+    box-shadow: -10px 10px 90px red;
+    animation: battement_coeur 0.7s infinite;
+}
+
+@keyframes battement_coeur {
+    0% {
+        transform: rotate(-45deg) scale(1.5);
+    }
+    50% {
+        transform: rotate(-45deg) scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(-45deg) scale(1.5);
+    }
+}
+.coeur::before {
+    content:'';
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    right: -50%;
+    box-shadow: -10px -10px 90px red;
+}
+
+.coeur::after {
+    content:'';
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+    box-shadow: 10px 10px 90px red;
+}
