@@ -1,4 +1,4 @@
-# <span style="color: #26B260">coeur_battant</span>
+# [color: #26B260]coeur_battant
 Travail en html et CSS
 
 ![](coeur_css.gif)
