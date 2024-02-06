@@ -18,3 +18,6 @@ Travail en html et CSS
  #Objectifs
 
 #Technologies utilisées
+La liste des technologies utilisées est :
+- HTML
+- CSS
